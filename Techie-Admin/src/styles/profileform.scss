@@ -1,0 +1,36 @@
+.profile-div{
+  padding: 2rem ;
+  .profile-details{
+    
+      display: grid;
+      column-gap: 1em;
+      gap: 1em;
+      grid-template-columns: repeat(2, 1fr);
+      border-radius: 1%;
+    .no1{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin:2px;
+     input{
+      width: 18rem;
+      height: 2.5rem;
+     }
+     textarea{
+      width: 16em;
+      height: 6rem;
+      margin-right: 0.8em;
+      color: rgb(244,179,74);
+     }
+     
+    }
+  }
+}
+
+::-ms-input-placeholder{
+  color:rgb(244,179,74);
+}
+
+::placeholder{
+  color:rgb(244,179,74);
+}

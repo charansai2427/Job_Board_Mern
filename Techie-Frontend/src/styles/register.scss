@@ -1,0 +1,332 @@
+.register-container-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .register-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wallpaper {
+          width: 80%;
+          img {
+            width: 100%;
+          }
+        }
+      } 
+
+      .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.5rem;
+        .right-upper {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 1rem;
+          .blacircle {
+            background-color: black;
+            border: 2px solid #f4b34a;
+            border-radius: 50px;
+            height: 1em;
+            width: 1em;
+          }
+          .oraline {
+            width: 80%;
+            height: 0.1em;
+            background-color: rgb(244, 179, 74);
+          }
+          .oracircle {
+            background-color: rgb(244, 179, 74);
+            border-radius: 50px;
+            height: 1em;
+            width: 1em;
+          }
+        }
+        .logo-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .logo {
+            width: 25%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .register {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          row-gap: 1rem;
+          .form-item {
+            width: 100%;
+            position: relative;
+            margin-bottom: 15px;
+            input {
+             
+              width: 45%;
+              height: 3rem;
+              border-radius: 10px;
+              transform: translateX(60%);
+              color: rgb(0, 0, 0);
+              display: block;
+              border: 1px solid #918f8f;
+              transition: all 0.3s ease;
+              padding: 0 15px;
+  
+              &:focus-visible {
+               outline: 2px solid rgb(82, 164, 197);
+               border: none;
+              }
+            }
+            label {
+              position: absolute;
+              cursor: text;
+              z-index: 2;
+              top: 13px;
+              left: 30%;
+              font-size: 18px;
+              // font-weight: bold;
+              background: #fff;
+              padding: 0 10px;
+              color: rgb(107, 107, 106);
+              font-weight: lighter;
+              transition: all 0.3s ease;
+            }
+          }
+  
+         
+  
+          .form-item input:focus + label,
+          .form-item input:valid + label {
+            font-size: 11px;
+            font-weight: 500;
+            top: -5px;
+          }
+  
+          .form-item input:focus + label {
+            color: rgb(11, 169, 209);
+          }
+        }
+        .AlreadyRegis {
+          div {
+            cursor: pointer;
+            color: orange;
+          }
+        }
+        .register-btn {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+              width: 45%;
+              height: 3rem;
+              background-color: orange;
+              border: none;
+              outline: none;
+              border-radius: 10px;
+              font-size: 1.3em;
+              padding: 0.2rem;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .register-container-main {
+     width: 100%;
+     height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.9rem 0.9rem;
+      .register-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        .left {
+          width: 100%;
+          display: flex;
+  
+          justify-content: center;
+          align-items: center;
+  
+          .wallpaper {
+            width: 80%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .right {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          row-gap: 1.5rem;
+          .right-upper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 1rem;
+            .blacircle {
+              background-color: black;
+              border: 2px solid #f4b34a;
+              border-radius: 50px;
+              height: 1em;
+              width: 1em;
+            }
+            .oraline {
+              width: 80%;
+              height: 0.1em;
+              background-color: rgb(244, 179, 74);
+            }
+            .oracircle {
+              background-color: rgb(244, 179, 74);
+              border-radius: 50px;
+              height: 1em;
+              width: 1em;
+            }
+          }
+          .logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo {
+              width: 30%;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .register {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 1rem;
+  
+
+            .form-item {
+              width: 100%;
+              position: relative;
+              margin-bottom: 15px;
+              input {
+               
+                width: 55%;
+                height: 3rem;
+                border-radius: 10px;
+                transform: translateX(40%);
+                padding-left: 11%;
+                color: rgb(0, 0, 0);
+                display: block;
+                border: 1px solid #918f8f;
+                transition: all 0.3s ease;
+                padding: 0 15px;
+    
+                &:focus-visible {
+                 outline: 2px solid rgb(82, 164, 197);
+                 border: none;
+                }
+              }
+              label {
+                position: absolute;
+                cursor: text;
+                z-index: 2;
+                top: 10px;
+                left: 25%;
+                font-size: 18px;
+                // font-weight: bold;
+                background: #fff;
+                padding: 0 10px;
+                color: rgb(107, 107, 106);
+                font-weight: lighter;
+                transition: all 0.3s ease;
+              }
+            }
+    
+           
+    
+            .form-item input:focus + label,
+            .form-item input:valid + label {
+              font-size: 11px;
+              font-weight: 500;
+              top: -5px;
+            }
+    
+            .form-item input:focus + label {
+              color: rgb(11, 169, 209);
+            }
+
+            .input-container {
+              width: 100%;
+              input {
+             
+              }
+            }
+  
+            .AlreadyRegis {
+              div {
+                cursor: pointer;
+              }
+            }
+            .register-btn {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              div {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                  width: 45%;
+                  height: 3rem;
+                  background-color: orange;
+                  border: none;
+                  outline: none;
+                  border-radius: 10px;
+                  font-size: 1.3em;
+                  padding: 0.2rem;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

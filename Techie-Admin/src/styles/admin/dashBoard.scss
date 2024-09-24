@@ -1,0 +1,40 @@
+.dashboard-container{
+    width: 100%;
+    .dashboard-display-part{
+        display: flex;
+        width: 100%;
+       
+       .listings{
+        width: 14%;
+       }
+      li{
+        text-align: start;
+        &:hover{
+            color: #52d6f4;
+            border: 1px solid;
+            border-radius: 10px;
+            border-left: 0em;
+            background-color: #65a89b;
+           }
+      }
+       }
+       .display-part{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         column-gap: 0.5rem;
+         row-gap: 0.1rem;
+         .delete{
+            display: flex;
+            justify-content: end;
+            button{
+                border: none;
+            }
+         }
+       }
+      
+    }
+
+
+.display-part-disable{
+    display: none;
+}

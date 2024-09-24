@@ -1,0 +1,41 @@
+.login-container{
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+        padding: 3%;
+        padding-top: 6%;
+        img{
+            width:35%;
+            height:20%;
+        }
+        button{
+            background-color:orange;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 1.3em;
+            width: 8%;
+            color: white;
+            margin-left:7em ;
+        }
+    }
+   
+}
+.login{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   padding-left: 20em;
+   padding-right: 3em;
+    gap: 0em;
+    padding-top: 1em;
+}
+
+::-ms-input-placeholder{
+    color:rgb(244,179,74);
+}
+
+::placeholder{
+    color:rgb(244,179,74);
+}

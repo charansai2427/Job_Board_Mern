@@ -1,0 +1,520 @@
+@import url('https://use.fontawesome.com/releases/v5.0.6/js/all.js');
+.header-container-main {
+  width: 100%;
+  
+  .header-container {
+    width: 100%;
+    // height: 8em;
+    padding: 1rem 1rem 1rem 4rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 15px solid orange;
+    // box-shadow: 0 0.1rem 0.3rem;
+    flex-wrap: wrap;
+    z-index: -1;
+
+    .logo-container {
+      width: 10%;
+      display: flex;
+      justify-content: start;
+      cursor: pointer;
+
+      .logo {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .search-container {
+      width: 25%;
+
+      .search {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //  border: 3px solid rgb(31, 30, 30);
+        box-shadow: 0 0 0.3rem;
+        padding: 0.2rem 2rem 0.4rem 1rem;
+        border-radius: 15px;
+
+        .inputSearch {
+          width: 94%;
+
+          input {
+            width: 100%;
+            height: 2.5rem;
+            outline: none;
+            border: none;
+          }
+
+          ::-ms-input-placeholder {
+            color: rgb(244, 179, 74);
+          }
+
+          ::placeholder {
+            color: rgb(244, 179, 74);
+          }
+        }
+
+        .search-btn {
+          width: 8%;
+
+          button {
+            width: 100%;
+            height: 2.5rem;
+            background: none;
+            border: none;
+
+            .search-icon {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+
+
+
+    // .ifollow {
+    //   // width: 25%;
+    //   height: 3rem;
+    //   padding-top: 0.8rem;
+    //   cursor: pointer;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   padding-right: 2em;
+
+    //   p {
+    //     color: black;
+    //     background-color: white;
+    //     border: 2px solid black;
+    //     border-radius: 24px;
+    //     padding: 0.5em 1em 0.5em 1em;
+    //     cursor: pointer;
+    //     &:hover{
+    //       color: #ffffff;
+    //       background-color: #FFA500;
+    //     border: 2px solid #FFA500;
+    //     border-radius: 24px;
+    //     }
+    //   }
+
+    // }
+
+    // .profile-icon-container {
+    //   // width: 25%;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   color: white;
+    //   font-size: 8px;
+
+    //   .profile-name {
+
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     padding-top: 0.7rem;
+    //     border-radius: 50%;
+    //     cursor: pointer;
+    //     font-weight: 600;
+    //     font-size: 1.8rem;
+    //     width: 3.3rem;
+    //     height: 3.3rem;
+    //     background-color: orange;
+    //     border-radius: 50%;
+
+    //     p {
+    //       padding-top: 0rem;
+    //     }
+    //   }
+    // }
+  }
+
+
+// .mprofile{
+//   height: 3rem;
+//   padding-top: 0rem;
+//   padding-right: 2em;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   label{
+//     color: black;
+//     background-color: white;
+//     border: 2px solid black;
+//     border-radius: 24px;
+//     padding: 0.5em 1em 0.5em 1em;
+//     cursor: pointer;
+//     &:hover{
+//       color: #ffffff;
+//       background-color: #FFA500;
+//     border: 2px solid #FFA500;
+//     border-radius: 24px;
+//     }
+//   }
+// }
+
+// .savjob{
+//   height: 3rem;
+//   padding-top: 1em;
+//   padding-right: 2em;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   .save{
+//     color: black;
+//     background-color: white;
+//     border: 2px solid black;
+//     border-radius: 24px;
+//     padding: 0.5em 1em 0.5em 1em;
+//     text-decoration: solid;
+//     cursor: pointer;
+//     &:hover{
+//       color: #ffffff;
+//       background-color: #FFA500;
+//     border: 2px solid #FFA500;
+//     border-radius: 24px;
+//     }
+//   }
+// }
+
+// .log{
+//   height: 3rem;
+//   padding-top: 0em;
+//   padding-right: 2em;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   .out{
+//     color: black;
+//     background-color: white;
+//     border: 2px solid black;
+//     border-radius: 24px;
+//     padding: 0.5em 1em 0.5em 1em;
+//     text-decoration: solid;
+//     cursor: pointer;
+//     &:hover{
+//       color: #ffffff;
+//       background-color: #FFA500;
+//     border: 2px solid #FFA500;
+//     border-radius: 24px;
+//     }
+//   }
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #31395c;
+  padding: 3em;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto", sans-serif;
+
+  @media (max-height: 500px) {
+    font-size: 60%;
+  }
+}
+
+.hamburger-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  position: relative;
+  z-index: 10;
+  &.open {
+    background-image: url(https://res.cloudinary.com/dpt7h5lui/image/upload/v1706354825/3686971_qwqene.png);
+  }
+}
+
+.panel {
+  max-width: 300px;
+  background-color: #455073;
+  background-size: 117px 188px;
+  transition: all 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  // position: absolute;
+  position: fixed;
+  z-index: 5;
+  // right: 0;
+  right: -100%;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  padding: 3em;
+  display: flex;
+
+  &.open {
+    visibility: visible;
+    width: 100%;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+ul {
+  margin: auto 0 auto auto;
+
+  li {
+    list-style: none;
+    font-size: 2em;
+    text-align: right;
+
+    & + li {
+      margin-top: 1em;
+    }
+
+    label {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: #7a6ffb;
+      }
+    }
+  }
+}
+
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .header-container-main {
+    width: 100%;
+
+
+    .header-container {
+      width: 100%;
+      // height: 8rem;
+      padding: 1rem 2rem 1rem 1rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 15px solid orange;
+      box-shadow: 0 0.1rem 0.3rem;
+      flex-wrap: wrap;
+
+      .logo-container {
+        width: 28%;
+        display: flex;
+        justify-content: start;
+
+        .logo {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .search-container {
+        width: 50%;
+
+        .search {
+          width: 100%;
+
+          display: flex;
+          justify-content: end;
+          align-items: center;
+
+          box-shadow: 0 0 0rem;
+          padding: 0rem;
+          border-radius: 0px;
+
+          .inputSearch {
+            width: 94%;
+
+            input {
+              width: 100%;
+              height: 2.3rem;
+              border-radius: 10px;
+              font-size: 0.8em;
+              outline: none;
+              border: none;
+            }
+          }
+
+          .search-btn {
+            width: 8%;
+
+            button {
+              width: 100%;
+              height: 2.5rem;
+              background: none;
+              border: none;
+
+              .search-icon {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+
+      // .ifollow {
+      //   // width: 25%;
+      //   height: 3rem;
+      //   padding-top: 0.8rem;
+
+      //   display: flex;
+
+      //   justify-content: center;
+      //   align-items: center;
+      //   display: none;
+
+      //   p {
+      //     color: rgb(7, 224, 7);
+      //     border: 3px solid rgb(7, 239, 7);
+      //     border-radius: 24px;
+      //     padding: 0.3rem;
+      //   }
+
+      // }
+
+      // .profile-icon-container {
+      //   // width: 25%;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   display: none;
+
+      //   .profile-name {
+
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //     padding-top: 0.7rem;
+      //     border-radius: 50%;
+      //     cursor: pointer;
+      //     font-weight: 600;
+      //     font-size: 1.8rem;
+      //     width: 3.3rem;
+      //     height: 3.3rem;
+      //     background-color: orange;
+      //     border-radius: 50%;
+
+      //     p {
+      //       padding-top: 0rem;
+      //     }
+      //   }
+      // }
+    }
+
+    // .profile-dropdown {
+    //   position: absolute;
+    //   top: 13%;
+    //   right: 5%;
+    //   z-index: 1;
+
+    //   ul {
+    //     list-style: none;
+    //     line-height: 2rem;
+    //     background-color: white;
+    //     padding: 0.4rem;
+    //     border-radius: 10px;
+    //     border: 1PX solid;
+    //     border-radius: 10px;
+    //     box-shadow: 0 0.1rem 0.3rem;
+
+    //     li {
+    //       font-size: 1rem;
+    //       padding: 0.2rem;
+    //       font-family: 500;
+    //       cursor: pointer;
+
+    //       &:hover {
+    //         background-color: skyblue;
+    //         border-radius:10px;              }
+    //     }
+    //   }
+    // }
+
+    // .extra{
+    //   display: flex;
+    //   justify-content: center;
+    //   flex-direction: row;
+    //   align-items: center;
+    //   gap: 3em;
+    //   position: absolute;
+    //   top: 2.3em;
+    //   right: 12em;
+    //   .mprofile{
+    //     color: rgb(7, 239, 7);
+    //     background-color: white;
+    //     border: 2px solid rgb(7, 239, 7);
+    //     border-radius: 24px;
+    //     padding: 0.3rem;
+    //     cursor: pointer;
+    //     &:hover{
+    //       color: #ffffff;
+    //       background-color: #FFA500;
+    //     border: 2px solid #FFA500;
+    //     border-radius: 24px;
+    //     padding: 0.3rem;
+    //     }
+    //   }
+    //   .savjob{
+    //     color: rgb(7, 239, 7);
+    //     background-color: white;
+    //     border: 2px solid rgb(7, 239, 7);
+    //     border-radius: 24px;
+    //     padding: 0.3rem;
+    //     cursor: pointer;
+    //     text-decoration: solid;
+    //     &:hover{
+    //       color: #ffffff;
+    //       background-color: #FFA500;
+    //     border: 2px solid #FFA500;
+    //     border-radius: 24px;
+    //     padding: 0.3rem;
+    //     }
+    //   }
+    //   .log{
+    //     color: rgb(7, 239, 7);
+    //     background-color: white;
+    //     border: 2px solid rgb(7, 239, 7);
+    //     border-radius: 24px;
+    //     padding: 0.3rem;
+    //     cursor: pointer;
+    //     &:hover{
+    //       color: #ffffff;
+    //       background-color: #FFA500;
+    //     border: 2px solid #FFA500;
+    //     border-radius: 24px;
+    //     padding: 0.3rem;
+    //     }
+    //   }
+    // }
+  }
+
+  // .display {
+  //   display: block;
+  // }
+
+  // .display-none {
+  //   display: none;
+  // }
+
+}

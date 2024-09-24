@@ -1,0 +1,384 @@
+.job-container {
+  width: 100%;
+  position: relative;
+
+  .viewhome {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    position: relative;
+  }
+
+  .h2 {
+    font-size: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .aboutcomp {
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+
+
+
+  }
+
+
+  .hiring-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .hirings {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 5em;
+      height: 2em;
+      border: 1px solid green;
+      border-radius: 20px;
+      color: green;
+      margin-right: 1em;
+      font-size: 0.8em;
+    }
+
+    .openings {
+
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 7em;
+      height: 2em;
+      border: 1px solid black;
+      border-radius: 20px;
+      background-color: grey;
+      // margin-right: 1em;
+      color: white;
+      font-size: 0.8em;
+    }
+
+    .sharejob {
+      display: flex;
+      justify-content: end;
+      text-align: center;
+      align-items: center;
+      width: 7em;
+      height: 2em;
+      border: 1px solid rgb(253, 9, 9);
+      border-radius: 20px;
+      // background-color:rgb(244, 239, 239);
+      margin-right: 0em;
+      color: rgb(253, 8, 8);
+    }
+
+  }
+
+  .viewjobsDetails-main {
+
+    width: 100%;
+  }
+
+  .viewjobsDetails {
+
+    width: 100%;
+
+
+
+    .viewjobsDetails-1 {
+      width: 100%;
+      padding-top: 1em;
+
+      .firstfour {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: gray;
+
+        div:nth-child(2) {
+          div {
+
+            .skil {
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              column-gap: 0.4em;
+            }
+          }
+
+        }
+      }
+
+      .lastsix {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: gray;
+      }
+    }
+
+
+  }
+
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0.8em;
+
+    label {
+      color: gray;
+    }
+
+  }
+
+  .loca {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0.8em;
+
+    label {
+      color: gray;
+    }
+  }
+
+  .aboutcomp {
+    font-size: 1.4em;
+  }
+
+  .card-company {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10em;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+
+
+    .view {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      position: absolute;
+      right: 1em;
+      bottom: 1em;
+    }
+
+    .locationcomp {
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 0.5em;
+      left: 6em;
+
+      .abt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 14.5px;
+        height: fit-content;
+        padding: 0em 7em 0em 0em;
+      }
+    }
+  }
+
+  .verify {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+  }
+
+  .btn-verify {
+    // padding: 0.5em 2em 0.5em 2em;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(80, 78, 78);
+  }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+  .job-container {
+    // width: 100%;
+    position: relative;
+    background-color: red;
+
+    .viewhome {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 2em;
+    }
+
+    .h2 {
+      font-size: 1.2em;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .aboutcomp {
+      font-size: 1.4em;
+      font-weight: bold;
+      display: flex;
+      justify-content: start;
+
+
+
+    }
+
+
+    .hiring-div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .hirings {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 4em;
+        height: 2em;
+        font-size: 0.8em;
+        border: 1px solid green;
+        border-radius: 20px;
+        color: green;
+        //   margin-right: 1em;
+
+      }
+
+      .openings {
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 7em;
+        height: 2em;
+        font-size: 0.8em;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: grey;
+        //   margin-right: 1em;
+        color: white;
+      }
+
+      .sharejob {
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        width: 7em;
+        height: 2em;
+        font-size: 0.8em;
+        border: 1px solid rgb(253, 9, 9);
+        border-radius: 20px;
+        background-color: rgb(244, 239, 239);
+        //   margin-right: 1em;
+        color: rgb(253, 8, 8);
+      }
+
+    }
+
+
+    .viewjobsDetails {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .viewjobsDetails-1 {
+        margin-top: 0.5em;
+      }
+
+      .viewjobsDetails-2 {
+        margin-top: 0.5em;
+      }
+    }
+
+
+    .description {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+
+    .card-company {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 6em;
+      flex-wrap: wrap;
+      position: relative;
+
+
+
+      .view {
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        position: absolute;
+        right: 1em;
+        bottom: 0.3em;
+        font-size: 0.8em;
+      }
+
+      .locationcomp {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+        position: absolute;
+        row-gap: 0.4em;
+        top: 0.5em;
+        left: 5em
+      }
+
+
+    }
+
+    .verify {
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 1em;
+      margin-bottom: 1em;
+
+    }
+
+    .btn-verify {
+      //   padding: 0.5em 2em 0.5em 2em;
+      border-radius: 10px;
+      color: white;
+      background-color: rgb(80, 78, 78);
+    }
+  }
+
+
+}

@@ -1,0 +1,215 @@
+///home///
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+}
+
+.jobs-container-main {
+  width: 100%;
+  padding: 2em 0 0 0;
+
+  .jobs-container-inner {
+    width: 100%;
+
+    .jobs-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
+
+      .jobs-single {
+        width: 100%;
+        height: 22em;
+        display: flex;
+        position: relative;
+        margin: 0em;
+        column-gap: 0em;
+
+        .card-1 {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          flex-direction: column;
+
+          position: absolute;
+          left: 2em;
+          top: 1em;
+
+          .hirings {
+            // .hiring-02{
+            //   color: greenyellow;
+            //   border: 1px solid greenyellow;
+            //   border-radius: 15px;
+         
+            // }
+            .hiring-01 {
+              font-size: 0.7em;
+              padding: 0 0.2em 0 0.3em;
+            }
+          }
+
+          .skills {
+            display: flex;
+            flex-wrap: wrap;
+
+            .search-skill {
+              text-decoration: solid;
+
+            }
+
+            .skills-text {
+              display: flex;
+              flex-wrap: wrap;
+              margin-bottom: 0.1em;
+              font-size: 0.8em;
+              width: auto;
+              height: 2em;
+              border: 1px solid rgb(240, 240, 249);
+              border-radius: 10px;
+              margin-left: 0.5em;
+              padding: 0.1em;
+              background-color: grey;
+              color: white;
+            }
+
+          }
+        }
+
+        .card-2 {
+          position: absolute;
+          bottom: 3%;
+          right: 10%;
+
+          .view-job-link {
+            text-decoration: solid;
+            color: black;
+
+            .view {
+              position: absolute;
+              bottom: 2%;
+              right: 13%;
+            }
+          }
+
+        }
+
+        .random {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3.5em;
+          height: 3.5em;
+
+          border: 1px solid;
+          border-radius: 50%;
+          color: white;
+          position: absolute;
+          right: 7%;
+          top: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  ///home///
+
+  .filter {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+  }
+
+  .jobs-container-main {
+    width: 100%;
+    padding: 2em 1em 1em 1em;
+
+    .jobs-container-inner {
+      width: 100%;
+
+      .jobs-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+
+        .jobs-single {
+          width: 100%;
+          height: 75vh;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid;
+          position: relative;
+          margin: 0em;
+          column-gap: 0em;
+          padding: 2em 0 0 0;
+          cursor: pointer;
+
+          .card-1 {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            row-gap: 2em;
+            position: absolute;
+            left: 2em;
+            top: 1em;
+
+            .skills {
+              display: flex;
+              flex-wrap: wrap;
+
+              .skills-text {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 0.1em;
+                font-size: 0.8em;
+                width: auto;
+                height: 2em;
+                border: 1px solid rgb(240, 240, 249);
+                border-radius: 10px;
+                margin-left: 0.5em;
+                padding: 0.1em;
+                background-color: grey;
+                color: white;
+                cursor: pointer;
+              }
+
+              .hirings {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+              }
+            }
+          }
+
+          .card-2 {
+            .random {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 3em;
+              height: 3em;
+              border: 1px solid;
+              border-radius: 50%;
+              color: white;
+              position: absolute;
+              right: 2em;
+              top: 2em;
+            }
+          }
+        }
+      }
+    }
+
+    .viewjob {
+      right: 4em;
+      bottom: 1em;
+      position: absolute;
+      color: black;
+    }
+  }
+}

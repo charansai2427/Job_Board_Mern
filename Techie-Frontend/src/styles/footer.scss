@@ -1,0 +1,190 @@
+.foter{
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+     height: 17em;
+     padding: 3em 3em 1.8em 4em;
+     gap: 1.5em;
+    display: flex;
+     justify-content: space-between;
+     align-items: start;
+    border-top: 1px solid #f4b34a;
+    border-radius: 75px 75px 0 0;
+    box-shadow: 0px -4px 6px 4px #fce6c5;
+    background-color: white;
+  
+  .techie-div{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+    .techie-logo-container{
+   width:100%;
+  .techie-logo{
+    width: 100%;
+    height: 3em;
+  }
+ 
+ }
+ .url{
+  width: 100%;
+  font-size: 1em;
+  line-height: 1em;
+//   transform: translateY(-100%) translateX(10%);
+  
+}
+ .sm-div{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2em;
+    // margin-top: 1em;
+    // margin-bottom: 2em;
+   .sm-img{
+    width: 1.8em;
+  }
+ }
+ 
+  }
+ 
+  .techie-res{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.4em;
+    .resourses{
+    font-weight: bold;
+    font-size: 0.2em;
+  }
+  }
+  .techie-about{
+   
+    font-size: 0.7em;
+   .techie-about-1{
+        font-size: 1.5em;
+        padding-bottom: 0.9em;
+        font-weight: bolder;
+    }
+    .techie-about-inner{
+       
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        font-size: 1.5em;
+    }
+  }
+ 
+  .techie-map{
+   
+  .map{
+    width: 100%;
+    height: 8.5em;
+  }
+  }
+  
+  
+  
+ 
+  
+  
+  }
+
+@media only screen and (min-width:320px) and (max-width:480px){
+  
+    .foter{
+      
+        font-family: Arial, Helvetica, sans-serif;
+        width:100%;
+         height: 23em;
+         padding: 2em 1.7em 2em 1.7em;
+         gap: 1.5em;
+        display: none;
+      
+         grid-template-columns: repeat(2, 1fr);
+       
+        border-top: 1px solid #f4b34a;
+        border-radius: 75px 75px 0 0;
+        box-shadow: 0px -4px 6px 4px #fce6c5;
+        background-color: white;
+      
+      .techie-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .techie-logo-container{
+       width:100%;
+      .techie-logo{
+        width: 100%;
+        height: 3em;
+      }
+     
+     }
+     .url{
+      width: 100%;
+      font-size: 0.6em;
+      transform: translateY(0%) translateX(0%);
+      
+    }
+     .sm-div{
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0em;
+        // margin-top: 1em;
+        // margin-bottom: 2em;
+       .sm-img{
+        width: 1.5em;
+      }
+     }
+     
+      }
+     
+      .techie-res{
+        font-size: 0.9em;
+        font-weight: bold;
+        line-height: 1.9em;
+        .resourses{
+        font-weight: bold;
+        font-size: 0.2em;
+      }
+      }
+      .techie-about{
+       width:100%;
+        font-size: 0.5em;
+       .techie-about-1{
+            font-size: 1.2em;
+            padding-bottom: 0.9em;
+            font-weight: bolder;
+        }
+        .techie-about-inner{
+           
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+            flex-direction: column;
+            font-size: 1.5em;
+        }
+      }
+     
+      .techie-map{
+        width: 100%;
+      .map{
+        width: 100%;
+        height: 8.5em;
+      }
+      }
+      
+      
+      
+     
+      
+      
+      }
+}
